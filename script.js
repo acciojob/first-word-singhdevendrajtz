@@ -1,7 +1,17 @@
 function firstWord(s) {
-	let x=s.split(' ');
-	return(x[0]);
-  // your code here
+		let first_word="";
+	for(x of s)
+    {
+        if(x==" ")
+        {
+            break;
+        }
+        else 
+        {
+            first_word+=x;
+        }
+    }
+    return(first_word);
 }
 
 // Do not change the code below
