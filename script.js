@@ -1,14 +1,14 @@
 function firstWord(s) {
 		let first_word="";
-	for(x of s)
+	for(x in s)
     {
-        if(x==" ")
+        if(s[x]==" " && s.length!=0 && x!=0)
         {
             break;
         }
-        else 
+        else if(s[x]!=" ")
         {
-            first_word+=x;
+            first_word+=s[x];
         }
     }
     return(first_word);
