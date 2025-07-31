@@ -1,4 +1,7 @@
 function firstWord(s) {
+	if(s.length)
+	let x=s.split(' ');
+	return(x[0]);
   // your code here
 }
 
